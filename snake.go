@@ -1,8 +1,5 @@
 package main
 
-import(
-	"tool"
-)
 
 const (
 	LEFT = iota
@@ -17,13 +14,13 @@ type SnakeBody struct {
 }
 
 type Snake struct {
-	bodys tool.Vector
+	bodys Vector
 	direction int
 }
 
 func NewSnake(x, y int) *Snake{
 	return &Snake{
-		bodys : tool.NewVector(),
+		bodys : NewVector(),
 		direction : UP,
 	}
 }

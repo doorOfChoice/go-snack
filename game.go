@@ -1,7 +1,6 @@
 package main
 
 import(
-	"tool"
 	"math/rand"
 	"math"
 	"fmt"
@@ -98,8 +97,8 @@ func parseDirection(key termbox.Key) int{
 	}
 }
 
-func (this *Game) getEmpty() (tool.Vector, bool) {
-	empty := tool.NewVector()
+func (this *Game) getEmpty() (Vector, bool) {
+	empty := NewVector()
 
 	for i := 1; i < this.height - 1; i++ {
 		for j := 1; j < this.width - 1; j++ {
